@@ -3,6 +3,39 @@
     vertical-align: bottom;
   }
 
+.nunito {
+    font-size: 16px; /* Sets the font size to 16px */
+    font-family: 'Nunito', sans-serif; /* Uses Nunito font */
+    font-weight: 600; /* Adjust weight if needed */
+    text-align: left;
+}
+
+.nunitop {
+  font-size: 16px; /* Sets the font size to 16px */
+  font-family: 'Nunito', sans-serif; /* Uses Nunito font */
+  margin-bottom: 2px; /* Match the mb-2 in Tailwind */
+  text-align: left;
+  color: #3C3C3C;
+}
+
+.container1 {
+  display: flex;   /* Places all divs in a row */
+  gap: 24px;       /* Adds spacing between divs */
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  align-items: flex-start; /* Aligns all items to the top-left */
+  justify-content: flex-start; /* Ensures content starts from the left */
+  text-align: left; /* Aligns text to the left */
+  gap: 15px; /* Adds spacing between the image and text */
+}
+
 .container {
     text-align: center;
     padding: 20px;
@@ -73,12 +106,14 @@
     width: 50px;
     margin-right: 10px;
   }
+
+ 
   
   .text-content {
     display: flex;
     flex-direction: column;
   }
-  
+ 
   .footer {
     
     background-color: #2e8b57;
@@ -89,4 +124,35 @@
     font-size: '16px';
     margin-top: 0; 
   }
+
+  .child2 {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: left; /* Aligns text content */
+    width: 100%; /* Ensures it takes up full width */
+    max-width: 200px; /* Optional: Set max width */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Centers content */
+  }
+  
+  .sub-image2 {
+    width: 100%; /* Make the image match the container width */
+    max-width: 300px; /* Adjust max width as needed */
+    display: block; /* Prevents extra spacing */
+    margin-bottom: -5px; /* Space between image and text */
+  }
+  
+  .imgfooter {
+    width: 100%; /* Make text match image width */
+    max-width: 300px; /* Same max-width as .sub-image2 */
+    background-color:teal;
+    color: white;
+    padding: 16px; /* Add padding without affecting width */
+  box-sizing: border-box; /* Ensures padding does not increase width */
+  border-radius: 8px;
+    min-height: 200px;
+  }
+  
   
